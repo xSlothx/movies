@@ -13,6 +13,7 @@ CREATE TABLE [dbo].[Customer2] (
 		[Zip]            [char](5) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[BirthDate]      [date] NULL,
 		[Gender]         [char](1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test]           [date] NULL,
 		CONSTRAINT [UQ__Customer__BA0BD0C5ECB0B82F]
 		UNIQUE
 		NONCLUSTERED
