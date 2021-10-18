@@ -13,6 +13,9 @@ CREATE TABLE [dbo].[Customer] (
 		[Zip]            [char](5) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[BirthDate]      [date] NULL,
 		[Gender]         [char](1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test2]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test3]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [Customer_UK]
 		UNIQUE
 		NONCLUSTERED
@@ -64,6 +67,8 @@ CREATE NONCLUSTERED INDEX [idx_Nonclustered_Customer_CustomerId]
 	ON [dbo].[Customer] ([CustomerId])
 	WITH ( FILLFACTOR = 100)
 	ON [PRIMARY]
+GO
+EXEC sp_addextendedproperty N'MS_Description', N'TEST1', 'SCHEMA', N'dbo', 'TABLE', N'Customer', 'COLUMN', N'FirstName'
 GO
 GRANT SELECT
 	ON [dbo].[Customer]
