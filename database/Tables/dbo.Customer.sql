@@ -4,7 +4,7 @@ SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[Customer] (
 		[CustomerId]     [int] NOT NULL,
-		[FirstName]      [varchar](700) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[FirstName]      [varchar](800) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[LastName]       [varchar](30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[Phone]          [char](10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[Address]        [varchar](40) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
@@ -17,6 +17,8 @@ CREATE TABLE [dbo].[Customer] (
 		[Test2]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test3]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test6]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test7]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test8]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [Customer_UK]
 		UNIQUE
 		NONCLUSTERED
