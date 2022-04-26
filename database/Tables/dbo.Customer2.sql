@@ -14,15 +14,20 @@ CREATE TABLE [dbo].[Customer2] (
 		[BirthDate]      [date] NULL,
 		[Gender]         [char](1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test]           [date] NULL,
+		[Test2]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test3]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [UQ__Customer__BA0BD0C5ECB0B82F]
 		UNIQUE
 		NONCLUSTERED
 		([FirstName], [LastName], [Phone])
+WITH (
+		FILLFACTOR=100)
 		ON [PRIMARY],
 		CONSTRAINT [PK__Customer__A4AE64D85E3D12C3]
 		PRIMARY KEY
 		CLUSTERED
 		([CustomerId])
+	WITH FILLFACTOR=100
 	ON [PRIMARY]
 )
 GO
