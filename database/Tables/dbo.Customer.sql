@@ -26,6 +26,7 @@ CREATE TABLE [dbo].[Customer] (
 		[Test13]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test14]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test15]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test16]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [Customer_UK]
 		UNIQUE
 		NONCLUSTERED
