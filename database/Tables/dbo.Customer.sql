@@ -30,6 +30,8 @@ CREATE TABLE [dbo].[Customer] (
 		[test15]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test16]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test17]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test18]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test19]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [Customer_UK]
 		UNIQUE
 		NONCLUSTERED
@@ -83,10 +85,6 @@ CREATE NONCLUSTERED INDEX [idx_Nonclustered_Customer_CustomerId]
 	ON [PRIMARY]
 GO
 EXEC sp_addextendedproperty N'MS_Description', N'TEST1', 'SCHEMA', N'dbo', 'TABLE', N'Customer', 'COLUMN', N'FirstName'
-GO
-GRANT SELECT
-	ON [dbo].[Customer]
-	TO [public]
 GO
 ALTER TABLE [dbo].[Customer] SET (LOCK_ESCALATION = TABLE)
 GO
