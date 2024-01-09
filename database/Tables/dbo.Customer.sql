@@ -19,6 +19,7 @@ CREATE TABLE [dbo].[Customer] (
 		[Test4]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test5]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[META]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Verizon]        [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [Customer_UK]
 		UNIQUE
 		NONCLUSTERED
