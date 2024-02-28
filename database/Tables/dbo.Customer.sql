@@ -23,6 +23,7 @@ CREATE TABLE [dbo].[Customer] (
 		[Test7]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test8]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[AAOS]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Virus]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [Customer_UK]
 		UNIQUE
 		NONCLUSTERED
