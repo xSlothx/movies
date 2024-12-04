@@ -10,7 +10,7 @@ CREATE TABLE [dbo].[C_Customer] (
 		[c_middle]           [char](2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[c_last]             [char](16) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[c_street_1]         [char](20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-		[c_street_2]         [char](20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[c_street_2]         [char](30) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[c_city]             [char](20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[c_state]            [char](2) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[c_zip]              [char](9) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
