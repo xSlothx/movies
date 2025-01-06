@@ -18,7 +18,8 @@ CREATE TABLE [dbo].[Customer2] (
 		[Test3]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test4]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test5]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-		[Test6]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[TestTest]       [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test7]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [UQ__Customer__BA0BD0C5ECB0B82F]
 		UNIQUE
 		NONCLUSTERED
