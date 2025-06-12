@@ -14,20 +14,27 @@ CREATE TABLE [dbo].[Customer] (
 		[BirthDate]      [date] NULL,
 		[Gender]         [char](1) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-		[test2]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test2]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test3]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-		[test4]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-		[Test5]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test6]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test7]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test8]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[Test9]          [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test10]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test11]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test12]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test13]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test14]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test15]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test16]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test17]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test18]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test19]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[Test20]         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [Customer_UK]
 		UNIQUE
 		NONCLUSTERED
 		([FirstName], [LastName], [Phone])
-WITH (
-		FILLFACTOR=100)
 		ON [PRIMARY],
 		CONSTRAINT [Customer_PK]
 		PRIMARY KEY
@@ -71,10 +78,13 @@ CREATE NONCLUSTERED INDEX [Customer_IE3]
 GO
 CREATE NONCLUSTERED INDEX [idx_Nonclustered_Customer_CustomerId]
 	ON [dbo].[Customer] ([CustomerId])
-	WITH ( FILLFACTOR = 100)
 	ON [PRIMARY]
 GO
 EXEC sp_addextendedproperty N'MS_Description', N'TEST1', 'SCHEMA', N'dbo', 'TABLE', N'Customer', 'COLUMN', N'FirstName'
+GO
+GRANT SELECT
+	ON [dbo].[Customer]
+	TO [public]
 GO
 ALTER TABLE [dbo].[Customer] SET (LOCK_ESCALATION = TABLE)
 GO
